@@ -1,3 +1,6 @@
+.MessageInputForm form textarea {
+  width: 100vw; }
+
 .MessageInputForm form #messageInput {
   display: inline-block; }
 
