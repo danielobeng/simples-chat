@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "channel_id": "",
+        "author": "James",
+        "text": "Love the hat"
+    },
+    {
+        "id": 2,
+        "channel_id": "",
+        "author": "Jones",
+        "text": "Why thank you"
+    },
+    {
+        "id": 3,
+        "channel_id": "",
+        "author": "Sam",
+        "text": "I'm here too!"
+    }
+]

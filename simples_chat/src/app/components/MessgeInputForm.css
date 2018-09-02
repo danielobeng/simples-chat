@@ -1,0 +1,5 @@
+.MessageInputForm form #messageInput {
+  display: inline-block; }
+
+.MessageInputForm button {
+  display: inline-block; }

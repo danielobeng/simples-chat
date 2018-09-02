@@ -1,0 +1,24 @@
+.MessageContainer {
+  border: solid 1px darkgrey;
+  border-radius: 10px;
+  background-color: rgba(153, 200, 211, 0.26);
+  overflow-y: scroll;
+  height: 300px; }
+
+.Message {
+  background-color: #007bff;
+  border: none;
+  margin: 2em;
+  padding: 0.5em;
+  border-radius: 20px;
+  max-width: 30em;
+  height: auto; }
+  .Message .authorProp {
+    font-weight: bold;
+    color: #c6c8d2; }
+  .Message .textProp {
+    color: white; }
+
+.messageScroll {
+  float: left;
+  clear: both; }
