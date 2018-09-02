@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f25d5c8-a83c-4b9b-b102-f45ed4b77ce3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/simples_chat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simples_chat/.env" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.css" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/init_database.js" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/init_database.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,43 +26,47 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="3" />
+          <entry key="env" value="1" />
+          <entry key="js" value="5" />
           <entry key="json" value="2" />
-          <entry key="scss" value="2" />
+          <entry key="scss" value="3" />
           <entry key="www" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key=".env file" value="1" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="3" />
+          <entry key="JavaScript" value="5" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="SCSS" value="2" />
+          <entry key="SCSS" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="50" />
+          <entry key="env" value="58" />
+          <entry key="js" value="96" />
           <entry key="json" value="45" />
-          <entry key="scss" value="31" />
+          <entry key="scss" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key=".env file" value="58" />
           <entry key="JSON" value="45" />
-          <entry key="JavaScript" value="50" />
-          <entry key="SCSS" value="31" />
+          <entry key="JavaScript" value="96" />
+          <entry key="SCSS" value="61" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simples_chat/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -66,35 +74,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.scss">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express/bin/www">
+        <entry file="file://$PROJECT_DIR$/simples_chat/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/express/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express/routes/index.js">
+        <entry file="file://$PROJECT_DIR$/simples_chat/src/app/init_database.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -108,9 +116,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/simples_chat/src/index.scss" />
-        <option value="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss" />
         <option value="$PROJECT_DIR$/simples_chat/package.json" />
         <option value="$PROJECT_DIR$/express/app.js" />
+        <option value="$PROJECT_DIR$/simples_chat/.env" />
+        <option value="$PROJECT_DIR$/simples_chat/src/app/init_database.js" />
+        <option value="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.scss" />
+        <option value="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss" />
       </list>
     </option>
   </component>
@@ -2185,6 +2196,7 @@
     <option name="width" value="960" />
     <option name="height" value="1177" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -2201,17 +2213,6 @@
             <path>
               <item name="simples_chat" type="b2602c69:ProjectViewProjectNode" />
               <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simples_chat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simples_chat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
               <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2219,6 +2220,29 @@
               <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
               <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simples_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simples_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="simples_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simples_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="simples_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
@@ -2259,17 +2283,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="23" width="960" height="1177" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3299539" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -2277,15 +2294,31 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299539" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -2298,16 +2331,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js" />
     <entry file="file://$PROJECT_DIR$/express/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -2322,13 +2346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simples_chat/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/express/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -2340,6 +2357,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/storage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/init_database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
