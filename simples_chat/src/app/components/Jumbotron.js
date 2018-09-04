@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './Jumbotron.css';
-import sergei_img from '../../images/sergei.png'
 
 
 // TODO: Make a cool jumbotron with a meerkat type thing
@@ -8,14 +7,33 @@ import sergei_img from '../../images/sergei.png'
 
 class Jumbotron extends React.Component {
 
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll() {
+        const pageTop = window.scrollY;
+        // const meerkat = document.getElementById()
+
+        console.log(pageTop)
+    }
+
+
     render() {
         return (
-            <div className="jumbotron">
-                <h1>
-                    Simples Chat
-                </h1>
-                {/*<img src={sergei_img} alt=""/>*/}
-            </div>
+            <Fragment>
+                <div className="jumbotron" id="jumbotron">
+                    <h1>
+                        Simples Chat
+                    </h1>
+                    {/*<div id="background-clouds"></div>*/}
+                    {/*<div id="sergei_meerkat"></div>*/}
+                </div>
+            </Fragment>
         )
     }
 };

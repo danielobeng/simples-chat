@@ -37,7 +37,8 @@ class App extends Component {
             const messages = [...this.state.messages, newMessage];
             this.setState({ messages });
 
-        })
+            });
+
     }
 
     onSendMessage(author, text) {

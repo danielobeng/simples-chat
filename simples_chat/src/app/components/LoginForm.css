@@ -1,8 +1,52 @@
-input {
-  border-radius: 5px; }
-
-form {
-  display: inline-block; }
-
-button {
-  display: inline-block; }
+#loginForm {
+  text-align: center; }
+  #loginForm h1 {
+    color: #8b8f97;
+    transition: all 1s ease-in; }
+  #loginForm input {
+    color: #8b8f97;
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #C8CCD4;
+    background: none;
+    border-radius: 0;
+    color: #223254;
+    transition: all .30s ease; }
+    #loginForm input:hover {
+      background: rgba(34, 50, 84, 0.03); }
+    #loginForm input:not(:placeholder-shown) span {
+      color: #5A667F;
+      transform: translateY(-26 px); }
+    #loginForm input:focus {
+      background: none;
+      outline: none; }
+  #loginForm form {
+    display: inline-block;
+    border-bottom: grey;
+    margin-right: 3px;
+    color: #8b8f97; }
+  #loginForm .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #0077FF;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .30s ease; }
+  #loginForm button {
+    display: inline-block;
+    color: grey;
+    border-bottom: 2px solid #C8CCD4;
+    padding: 11px 5px 11px 5px;
+    transition: all .30s ease-in-out; }
+    #loginForm button:hover {
+      background: rgba(34, 50, 84, 0.03);
+      cursor: pointer; }

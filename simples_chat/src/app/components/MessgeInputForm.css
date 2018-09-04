@@ -1,8 +1,17 @@
-.MessageInputForm form textarea {
-  width: 100vw; }
-
-.MessageInputForm form #messageInput {
-  display: inline-block; }
-
-.MessageInputForm button {
-  display: inline-block; }
+.MessageInputForm {
+  padding: 10px 0 10px 0;
+  color: #8b8f97; }
+  .MessageInputForm form {
+    text-align: center;
+    margin: 0; }
+    .MessageInputForm form textarea {
+      width: 95vw;
+      height: 135px;
+      float: left; }
+    .MessageInputForm form #messageInput {
+      display: inline-block; }
+  .MessageInputForm button {
+    display: inline-block;
+    width: 5vw;
+    height: 135px;
+    margin: auto 0 auto 0; }

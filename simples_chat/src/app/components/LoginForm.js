@@ -30,12 +30,13 @@ class LoginForm extends React.Component {
 
     render() {
         return(
-            <div>
+            <div id="loginForm">
                 <h1> Your username is now: {this.state.username_display}</h1>
                 <form>
                     <input type="text" placeholder="Enter name" onChange={this.onChange}/>
                 </form>
-                <button onClick={this.onClick} >Submit</button>
+                <button onClick={this.onClick}>Submit</button>
+                <span className="border"></span>
             </div>
             )
     };

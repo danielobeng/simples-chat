@@ -1,12 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister");
 .jumbotron {
   width: 100%;
-  z-index: -2;
-  background-image: url("../../images/sergei.png");
-  background-repeat: no-repeat;
-  background-position: right center;
+  height: 207px;
+  background-image: url("../../images/sergei.png"), url(../../images/clouds.png);
+  background-repeat: no-repeat, repeat;
+  background-position: right -70px, 0 -30px;
   background-attachment: fixed;
   backdrop-filter: blur(5px);
-  border-bottom: #8b8f97 solid 1px; }
+  background-color: #47abf3;
+  position: relative; }
   .jumbotron h1 {
     position: relative;
-    right: 20%; }
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #f6f700;
+    font-size: 1000%;
+    z-index: 2; }
+  @media screen and (max-width: 1064px) {
+    .jumbotron h1 {
+      font-size: 500%; } }

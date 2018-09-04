@@ -1,9 +1,20 @@
 .MessageInputForm {
+  padding: 10px 0 10px 0;
+
+  color: #8b8f97;
 
   form {
+
+    text-align: center;
+    margin: 0;
     textarea {
 
-      width: 100vw;
+      width: 95vw ;
+      height: 135px;
+      float: left;
+    }
+
+    label{
     }
 
     #messageInput{
@@ -12,6 +23,9 @@
   }
   button {
       display: inline-block;
+      width: 5vw;
+    height: 135px;
+    margin: auto 0 auto 0;
 
   }
 }
