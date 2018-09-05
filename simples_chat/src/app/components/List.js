@@ -18,7 +18,10 @@ class List extends React.Component {
     // };
 
     componentDidMount() {
+        let msg;
         console.log(this.props.messages)
+        getMessages().then(messages => {msg = messages})
+        console.log(msg)
        // console.log(this.props.messages.then(messages.map(({id, author, text}) => `elements ${id}, ${author}, ${text}`)))
        //  getMessages().then(function(messages) {console.log(messages)})
         // console.log(this.props.messages)
