@@ -8,39 +8,39 @@
 .jumbotron {
   width: 100%;
   height: 207px;
-  //z-index: -2;
-  //z-index: 1;
-  background-image: url('../../images/sergei.png'), url(../../images/clouds.png);
-  background-repeat: no-repeat, repeat;
-  background-position: right -70px, 0 -30px;
-  background-attachment: fixed;
-  backdrop-filter: blur(5px);
-  background-color: #47abf3;
+  z-index: -2;
+  //background-image: url('../../images/sergei.png'), url(../../images/clouds.png);
+  //background-repeat: no-repeat, repeat;
+  //background-position: right -70px, 0 -30px;
+  //background-attachment: fixed;
+  //backdrop-filter: blur(5px);
+  //background-color: #47abf3;
 
   //border-bottom: #379cd1 solid 1px;
   position: relative;
 
-  //#background-clouds {
-  //  position: absolute;
-  //  width: 100%;
-  //  height: 100%;
-  //  background-color: #000;
-  //  top: 0;
-  //  left: 0;
-  //
-  //  background-image: url(../../images/clouds.png);
-  //}
+  #background-clouds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    margin: 0;
 
-  //#sergei_meerkat {
-  //  width: 100%;
-  //  height: 100%;
-  //  background-image: url('../../images/sergei.png');
-  //  position: absolute;
-  //  background-repeat: no-repeat;
-  //  top: 0;
-  //  right: 50px;
-  //  z-index: 1;
-  //}
+    background-image: url(../../images/clouds.png);
+  }
+
+  #sergei_meerkat {
+    width: 100%;
+    height: 400px;
+    background-image: url('../../images/sergei.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -60px;
+    right: -1200px;
+    z-index: 1;
+  }
 
   h1 {
     position: relative;

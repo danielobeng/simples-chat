@@ -1,8 +1,10 @@
 #loginForm {
-  text-align: center; }
+  text-align: center;
+  background-color: white; }
   #loginForm h1 {
     color: #8b8f97;
-    transition: all 1s ease-in; }
+    transition: all 1s ease-in;
+    padding-top: 32px; }
   #loginForm input {
     color: #8b8f97;
     -webkit-appearance: none;

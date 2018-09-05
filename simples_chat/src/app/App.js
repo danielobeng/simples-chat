@@ -8,6 +8,9 @@ import { getMessages, saveMessage, onNewMessage } from './storage';
 // import msg from '../messages.json'
 import Jumbotron from "./components/Jumbotron";
 
+import { connect } from 'react-redux';
+
+
 class App extends Component {
     constructor() {
      super();
@@ -16,12 +19,15 @@ class App extends Component {
          username: '',
      };
      this.onSendMessage = this.onSendMessage.bind(this);
-     this.changeUsername = this.changeUsername.bind(this);
+     // this.changeUsername = this.changeUsername.bind(this);
 
     };
 
     componentDidMount() {
-        getMessages().then(messages => this.setState({messages}));
+        // this.props.pullMessages();
+        // console.log(getMessages().then(messages =>messages));
+        // getMessages().then(messages => this.setState({messages}));
+
         // console.log(getMessages())
         // const dbRef = database.ref().child('0')
         // const result = dbRef.on('value', (element) => element.val());
@@ -33,18 +39,19 @@ class App extends Component {
         //     const username = (snapshot.val() && snapshot.val().username) || 'not working';
         //     console.log(username)
     // });
-        onNewMessage(newMessage => {
-            const messages = [...this.state.messages, newMessage];
-            this.setState({ messages });
 
-            });
+        // onNewMessage(newMessage => {
+        //     const messages = [...this.props.messages, newMessage];
+        //     this.setState({ messages });
+        //
+        //     });
 
     }
 
     onSendMessage(author, text) {
         const newMessage = {
             id: this.state.messages[this.state.messages.length - 1].id + 1,
-            author: this.state.author,
+            author: this.props.author,
             text: text,
             channel_id: '',
         };
@@ -55,21 +62,45 @@ class App extends Component {
         this.setState({ messages });
     };
 
-   changeUsername(author) {
-       this.setState({author: author,
-                      username: author})
-   }
+   // changeUsername(author) {
+   //     this.setState({author: author,
+   //                    username: author})
+   // }
 
   render() {
     return (
       <div className="App">
           <Jumbotron/>
-         <LoginForm onSubmit={this.changeUsername}/>
+         <LoginForm onSubmit={this.props.changeUsername}/>
           <br/>
-          <MessagePane username={this.state.username} messages={this.state.messages} onSendMessage={this.onSendMessage}/>
+          <MessagePane username={this.props.username} messages={this.props.messages} onSendMessage={this.onSendMessage}/>
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        author: state.author,
+        username: state.username,
+        messages: state.messages
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        changeUsername: (author) => {
+            dispatch({
+                type: "CHANGE_USERNAME",
+                payload: {author}
+            })
+        },
+        pullMessages: () => {
+            dispatch({
+                type: "PULL_MESSAGES",
+            })
+        }
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

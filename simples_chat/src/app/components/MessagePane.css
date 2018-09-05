@@ -12,12 +12,18 @@
   padding: 0.5em;
   border-radius: 20px;
   max-width: 30em;
-  height: auto; }
+  height: auto;
+  position: relative; }
+  .Message .textProp {
+    color: white; }
   .Message .authorProp {
     font-weight: bold;
     color: #c6c8d2; }
-  .Message .textProp {
-    color: white; }
+  .Message.self {
+    left: 400px;
+    background-color: white; }
+    .Message.self .textProp {
+      color: #007bff; }
 
 .messageScroll {
   float: left;

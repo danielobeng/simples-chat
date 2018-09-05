@@ -30,8 +30,8 @@ class Jumbotron extends React.Component {
                     <h1>
                         Simples Chat
                     </h1>
-                    {/*<div id="background-clouds"></div>*/}
-                    {/*<div id="sergei_meerkat"></div>*/}
+                    <div id="background-clouds"></div>
+                    <div id="sergei_meerkat"></div>
                 </div>
             </Fragment>
         )
