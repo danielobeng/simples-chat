@@ -53,7 +53,7 @@ class MessageInputForm extends React.Component {
                         id="messageInput"
                         className="form-control"
                         cols="100"
-                        rows="5">g</textarea>
+                        rows="5"></textarea>
                 </form>
                 <button className="send btn btn-primary" onClick={this.props.onSubmit}>Send</button>
             </div>

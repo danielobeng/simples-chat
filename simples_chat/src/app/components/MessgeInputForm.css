@@ -4,12 +4,11 @@
   .MessageInputForm form {
     text-align: center;
     margin: 0; }
-    .MessageInputForm form textarea {
+    .MessageInputForm form #messageInput {
+      display: inline-block;
       width: 95vw;
       height: 135px;
       float: left; }
-    .MessageInputForm form #messageInput {
-      display: inline-block; }
   .MessageInputForm button {
     display: inline-block;
     width: 5vw;

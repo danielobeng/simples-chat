@@ -16,10 +16,16 @@ class Jumbotron extends React.Component {
     }
 
     handleScroll() {
+        const top = 0;
         const pageTop = window.scrollY;
-        // const meerkat = document.getElementById()
 
-        console.log(pageTop)
+        const newtop_clouds = (top - (pageTop * 0.2));
+        const newtop_sergei = (top - (pageTop * 0.1));
+
+        // console.log( this.cloud_parallax.current)
+        // this.cloud_parallax.current.style.top = `${newtop}px`;
+        document.getElementById('background-clouds').style.top = `${newtop_clouds}px`;
+        document.getElementById('sergei_meerkat').style.top = `${newtop_sergei}px`;
     }
 
 
@@ -30,7 +36,7 @@ class Jumbotron extends React.Component {
                     <h1>
                         Simples Chat
                     </h1>
-                    <div id="background-clouds"></div>
+                    <div id="background-clouds" ref={this.cloud_parallax}></div>
                     <div id="sergei_meerkat"></div>
                 </div>
             </Fragment>

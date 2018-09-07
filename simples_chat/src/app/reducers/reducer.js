@@ -3,10 +3,9 @@ import messages from '../../messages.json';
 
 const initialState = {
     // messages: getMessages(),
-    // messages: getMessages().then(messages => {messages}),
-    // messages: '',
-    // messages,
-    messages: getMessages().then(messages => {this.messages = messages}),
+    // messages: getMessages().then(messages => {console.log(messages)}),
+    messages,
+    // messages: getMessages().then(messages => {this.messages = messages}),
     author: '',
 };
 
@@ -37,10 +36,9 @@ const reducer = (state = initialState, action) => {
         case 'PULL_MESSAGES':
             newState = {
                 ...state,
-                // messages: getMessages().then(messages => messages),
+                messages: action.payload.messages
             };
-            getMessages().then(messages => console.log(messages))
-            // getMessages().then(messages => this.setState({messages}));
+            // console.log(newState.messages)
     }
     return newState
 };

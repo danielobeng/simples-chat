@@ -7,18 +7,13 @@
 
     text-align: center;
     margin: 0;
-    textarea {
-
-      width: 95vw ;
-      height: 135px;
-      float: left;
-    }
-
-    label{
-    }
 
     #messageInput{
       display: inline-block;
+      width: 95vw ;
+      height: 135px;
+      float: left;
+
     }
   }
   button {

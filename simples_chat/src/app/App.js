@@ -24,9 +24,12 @@ class App extends Component {
     };
 
     componentDidMount() {
-        // this.props.pullMessages();
-        // console.log(getMessages().then(messages =>messages));
-        // getMessages().then(messages => this.setState({messages}));
+        // getMessages().then(messages => this.props.pullMessages(messages));
+        getMessages().then(messages => this.setState({messages}));
+
+        // setTimeout(() => console.log(this.state.messages),1000)
+        setTimeout(() => this.props.pullMessages(this.state.messages), 1000)
+
 
         // console.log(getMessages())
         // const dbRef = database.ref().child('0')
@@ -72,7 +75,6 @@ class App extends Component {
       <div className="App">
           <Jumbotron/>
          <LoginForm onSubmit={this.props.changeUsername}/>
-          <br/>
           <MessagePane username={this.props.username} messages={this.props.messages} onSendMessage={this.onSendMessage}/>
       </div>
     );
@@ -95,9 +97,10 @@ const mapDispatchToProps = (dispatch) => {
                 payload: {author}
             })
         },
-        pullMessages: () => {
+        pullMessages: (messages) => {
             dispatch({
                 type: "PULL_MESSAGES",
+                payload: {messages}
             })
         }
     }
