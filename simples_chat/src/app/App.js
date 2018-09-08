@@ -10,9 +10,16 @@ import Jumbotron from "./components/Jumbotron";
 import { connect } from 'react-redux';
 
 // TODO:
-// - No send message if text is empty
-// - No send message if name is not set
-// If author name is same as user name then put text to the right
+// make messages load without the need for a timer using promises properly
+// only one username per session
+// map enter to submit name for logiin
+// map enter to denter message on input and shift + enter to enter a new line
+// emoji selesctions
+// fix the need to have messages pre-loaded
+// implement event sourcing
+
+// BUG:
+// send on enter does not scoll page down
 
 class App extends Component {
     constructor() {
@@ -22,9 +29,11 @@ class App extends Component {
          username: '',
      };
      this.onSendMessage = this.onSendMessage.bind(this);
-     // this.changeUsername = this.changeUsername.bind(this);
 
     };
+    componentWillMount() {
+
+    }
 
     componentDidMount() {
 
@@ -36,6 +45,20 @@ class App extends Component {
             this.setState({ messages });
             this.props.pullMessages(messages)
             });
+
+    }
+
+    componentDidUpdate() {
+        let authorProp = document.getElementsByClassName('authorProp')
+        let Message = document.getElementsByClassName('Message')
+        for (let i = 0; i < authorProp.length; i++) {
+            if (authorProp[i].textContent === this.props.username) {
+                Message[i].classList.add('self');
+            }
+            else {
+                Message[i].classList.remove('self')
+            }
+        }
     }
 
     onSendMessage(text) {

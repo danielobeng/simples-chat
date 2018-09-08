@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './MessgeInputForm.css';
-import { getMessages, saveMessage, onNewMessage } from '../storage';
+import { saveMessage } from '../storage';
 
 import {connect} from 'react-redux';
 
@@ -21,14 +21,19 @@ class MessageInputForm extends React.Component {
 
 
     onSubmit() {
-        this.props.onSend(this.state.text);
+        if (this.state.text === '' || this.props.author === '') {}
+
+        else {
+            this.props.onSend(this.state.text, false);
         saveMessage(
-            {   text: this.state.text,
+            {
+                text: this.state.text,
                 author: this.props.author,
                 channel_id: '',
                 id: this.props.messages[this.props.messages.length - 1].id + 1,
             });
-        this.setState({text: '' })
+        this.setState({text: ''})
+        }
     };
 
     updateMessage(event) {
@@ -39,6 +44,12 @@ class MessageInputForm extends React.Component {
         )
     };
 
+    handleKeyPress(e) {
+        if (e.key === 'Enter') {
+            document.getElementById('messageSendButton').click();
+        }
+    }
+
     render() {
         return (
             <div className="MessageInputForm">
@@ -47,12 +58,13 @@ class MessageInputForm extends React.Component {
                     <textarea
                         value={this.state.text}
                         onChange={this.updateMessage}
+                        onKeyPress={this.handleKeyPress}
                         id="messageInput"
                         className="form-control"
                         cols="100"
                         rows="5"></textarea>
                 </form>
-                <button className="send btn btn-primary" onClick={this.onSubmit}>Send</button>
+                <button id='messageSendButton' className="send btn btn-primary" onClick={this.onSubmit}>Send</button>
             </div>
         );
     }
@@ -78,10 +90,13 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onSend: (text) => {
+        onSend: (text, pageLoad) => {
             dispatch({
                 type: "ON_SEND",
-                payload: {text: text}
+                payload: {
+                    text: text,
+                    pageLoad: pageLoad
+                }
             })
         }
     }

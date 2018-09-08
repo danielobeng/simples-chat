@@ -17,19 +17,26 @@ class List extends React.Component {
     };
 
     componentDidMount() {
-
     }
 
     componentDidUpdate() {
-        this.scrollToBottom()
+        if (this.props.pageLoad === true) {
+            const objDiv = document.getElementById('MessageContainer');
+            objDiv.scrollTop = objDiv.scrollHeight;
+            console.log('pageload ' + this.props.pageLoad);
+        }
+        else if (this.props.pageLoad === false) {
+            this.scrollToBottom();
+            console.log('pageload ' + this.props.pageLoad)
+        }
     }
 
 
     render() {
         return (
-            <div className="MessageContainer">
+            <div className="MessageContainer" id="MessageContainer">
                 {this.props.messages.map(({id, author, text}) => <Message key={id} author={author} text={text}/>)}
-                <div className="messageScroll" ref={(el) => { this.messagesEnd = el; }}> </div>
+                <div id="messageScroll" ref={(el) => { this.messagesEnd = el; }}> </div>
             </div>
         );
     }
@@ -38,6 +45,7 @@ class List extends React.Component {
 const mapSateToProps = (state) => {
   return {
       messages: state.messages,
+      pageLoad: state.pageLoad,
   }
 };
 

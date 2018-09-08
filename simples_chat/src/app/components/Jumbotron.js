@@ -1,10 +1,6 @@
 import React, {Fragment} from 'react';
 import './Jumbotron.css';
 
-
-// TODO: Make a cool jumbotron with a meerkat type thing
-
-
 class Jumbotron extends React.Component {
 
     componentDidMount() {

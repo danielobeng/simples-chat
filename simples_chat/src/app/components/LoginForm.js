@@ -20,18 +20,34 @@ class LoginForm extends React.Component {
     }
 
     onClick(e) {
-        e.preventDefault();
         this.props.changeUsername();
+        e.preventDefault();
+
         }
+
+    handleKeyPress(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            document.getElementById('submitUsernameButton').click()
+        }
+        else if (e.key === ' ') {
+            e.preventDefault();
+        }
+    }
+
 
     render() {
         return(
             <div id="loginForm">
                 <h1> Your username is now: {this.props.username}</h1>
-                <form>
-                    <input type="text" placeholder="Enter name" onChange={this.onChange}/>
-                </form>
-                <button onClick={this.onClick}>Submit</button>
+                    <form>
+                        <input type="text"
+                               placeholder="Enter name"
+                               autoFocus
+                               onChange={this.onChange}
+                               onKeyPress={this.handleKeyPress}/>
+                        <button id="submitUsernameButton" onClick={this.onClick}>Submit</button>
+                    </form>
                 <span className="border"></span>
             </div>
             )

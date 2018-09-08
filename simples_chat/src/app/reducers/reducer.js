@@ -7,6 +7,7 @@ const initialState = {
     text: '',
     id: '' ,
     channel_id: '',
+    pageLoad: true
 };
 
 const reducer = (state = initialState, action) => {
@@ -24,6 +25,7 @@ const reducer = (state = initialState, action) => {
             newState = {
                 ...state,
                 text: action.payload.text,
+                pageLoad: action.payload.pageLoad,
             };
             break;
         case 'PULL_MESSAGES':

@@ -7,10 +7,10 @@ import List from './List';
 
 import { connect } from 'react-redux';
 
-
-// TODO: Display personal messages on the right and different colour than those sent by others
-
 class MessagePane extends React.Component {
+    componentDidMount() {
+    }
+
     render() {
         return (
             <div className="MessagePane">
