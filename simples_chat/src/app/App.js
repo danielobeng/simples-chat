@@ -28,7 +28,7 @@ class App extends Component {
         getMessages().then(messages => this.setState({messages}));
 
         // setTimeout(() => console.log(this.state.messages),1000)
-        setTimeout(() => this.props.pullMessages(this.state.messages), 1000)
+        setTimeout(() => this.props.pullMessages(this.state.messages), 2000)
 
 
         // console.log(getMessages())

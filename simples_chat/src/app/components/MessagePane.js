@@ -21,8 +21,6 @@ class MessagePane extends React.Component {
             }
 }
 
-
-
 MessagePane.defaultProps = {
     messages: []
 };

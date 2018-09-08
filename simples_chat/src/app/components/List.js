@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getMessages, saveMessage, onNewMessage } from '../storage';
 
 const Message = function(props) {
         return (

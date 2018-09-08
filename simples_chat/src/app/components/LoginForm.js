@@ -1,5 +1,6 @@
 import React from 'react';
 import './LoginForm.css';
+import { connect } from 'react-redux';
 
 
 class LoginForm extends React.Component {
@@ -15,23 +16,18 @@ class LoginForm extends React.Component {
     }
 
     onChange(e) {
-        this.setState({
-            username: e.target.value,
-        })
+        this.props.setAuthor(e.target.value)
     }
 
     onClick(e) {
         e.preventDefault();
-        this.setState({
-            username_display: this.state.username,
-            });
-        this.props.onSubmit(this.state.username);
+        this.props.changeUsername();
         }
 
     render() {
         return(
             <div id="loginForm">
-                <h1> Your username is now: {this.state.username_display}</h1>
+                <h1> Your username is now: {this.props.username}</h1>
                 <form>
                     <input type="text" placeholder="Enter name" onChange={this.onChange}/>
                 </form>
@@ -43,4 +39,27 @@ class LoginForm extends React.Component {
 
 }
 
-export default LoginForm;
+const mapSateToProps = (state) => {
+    return {
+        username: state.username,
+        author: state.author,
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        setAuthor: (author) => {
+            dispatch({
+                type: "SET_AUTHOR",
+                payload: {author: author}
+            })
+        },
+        changeUsername: () => {
+            dispatch({
+                type: "CHANGE_USERNAME",
+            })
+        },
+    }
+};
+
+export default connect(mapSateToProps, mapDispatchToProps)(LoginForm);

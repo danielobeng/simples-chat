@@ -1,36 +1,27 @@
-import { getMessages, saveMessage, onNewMessage } from '../storage';
 import messages from '../../messages.json';
 
 const initialState = {
-    // messages: getMessages(),
-    // messages: getMessages().then(messages => {console.log(messages)}),
     messages,
-    // messages: getMessages().then(messages => {this.messages = messages}),
     author: '',
+    username: '',
+    text: '',
 };
-
-// getMessages().then(messages => {initialState.messages = messages});
-// console.log(initialState.messages)
 
 const reducer = (state = initialState, action) => {
     let newState = {...state};
 
     switch (action.type) {
+
         case 'SET_AUTHOR':
             newState = {
                 ...state,
                 author: action.payload.author,
-                username: action.payload.author,
             };
             break;
-        case 'ON_SUBMIT':
-            const {author, text} = state;
-            // onSend(author, text);
-
+        case 'ON_SEND':
             newState = {
                 ...state,
-                author: '',
-                text: '',
+                text: action.payload.text,
             };
             break;
         case 'PULL_MESSAGES':
@@ -38,7 +29,12 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 messages: action.payload.messages
             };
-            // console.log(newState.messages)
+            break;
+        case 'CHANGE_USERNAME':
+            newState = {
+                ...state,
+                username: state.author
+            };
     }
     return newState
 };
