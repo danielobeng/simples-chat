@@ -21,9 +21,13 @@ class MessageInputForm extends React.Component {
 
 
     onSubmit() {
-        // const {author, text} = this.state;
         this.props.onSend(this.state.text);
-        saveMessage(this.state.text);
+        saveMessage(
+            {   text: this.state.text,
+                author: this.props.author,
+                channel_id: '',
+                id: this.props.messages[this.props.messages.length - 1].id + 1,
+            });
         this.setState({text: '' })
     };
 
@@ -34,14 +38,6 @@ class MessageInputForm extends React.Component {
             }
         )
     };
-
-    // updateName(event) {
-    //     this.setState(
-    //         {
-    //             name: event.target.value
-    //         }
-    //     )
-    // };
 
     render() {
         return (
@@ -76,6 +72,7 @@ const mapStateToProps = (state) => {
     return {
         author: state.author,
         text: state.text,
+        messages: state.messages,
     }
 };
 

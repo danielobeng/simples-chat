@@ -5,6 +5,8 @@ const initialState = {
     author: '',
     username: '',
     text: '',
+    id: '' ,
+    channel_id: '',
 };
 
 const reducer = (state = initialState, action) => {
