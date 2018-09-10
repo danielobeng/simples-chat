@@ -1,5 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import './List.css';
+
+
+const Spinner = function () {
+    return (
+        <div className="lds-css ng-scope">
+            <div className="lds-eclipse">
+                <div> </div>
+            </div>
+        </div>
+    )
+};
 
 const Message = function(props) {
         return (
@@ -10,14 +22,26 @@ const Message = function(props) {
         )
 };
 
+const MessageLoader = function(props) {
+    if (props.loadState === true) {
+        return (
+            <div>
+                {props.messages.map(({id, author, text}) => <Message key={id} author={author} text={text}/>)}
+            </div>
+        )
+    }
+    else {
+        return (
+            <Spinner/>
+        )
+    }
+};
+
 class List extends React.Component {
 
     scrollToBottom = () => {
         this.messagesEnd.scrollIntoView({ behavior: "smooth" });
     };
-
-    componentDidMount() {
-    }
 
     componentDidUpdate() {
         if (this.props.pageLoad === true) {
@@ -31,11 +55,11 @@ class List extends React.Component {
         }
     }
 
-
     render() {
         return (
             <div className="MessageContainer" id="MessageContainer">
-                {this.props.messages.map(({id, author, text}) => <Message key={id} author={author} text={text}/>)}
+                <MessageLoader messages={this.props.messages} loadState={this.props.initialDataLoaded}/>
+                {/*{this.props.messages.map(({id, author, text}) => <Message key={id} author={author} text={text}/>)}*/}
                 <div id="messageScroll" ref={(el) => { this.messagesEnd = el; }}> </div>
             </div>
         );
@@ -46,6 +70,8 @@ const mapSateToProps = (state) => {
   return {
       messages: state.messages,
       pageLoad: state.pageLoad,
+      initialDataLoaded: state.initialDataLoaded,
+
   }
 };
 

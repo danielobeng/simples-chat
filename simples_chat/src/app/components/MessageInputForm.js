@@ -5,6 +5,11 @@ import { saveMessage } from '../storage';
 
 import {connect} from 'react-redux';
 
+import EmojiPicker from 'emoji-picker-react';
+import JSEMOJI from 'emoji-js';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 // TODO: Add more functionality eg emoji, image attachment etc
 
 class MessageInputForm extends React.Component {
@@ -17,8 +22,8 @@ class MessageInputForm extends React.Component {
 
         this.updateMessage = this.updateMessage.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
-    };
 
+    };
 
     onSubmit() {
         if (this.state.text === '' || this.props.author === '') {}
@@ -45,16 +50,76 @@ class MessageInputForm extends React.Component {
     };
 
     handleKeyPress(e) {
-        if (e.key === 'Enter') {
+
+        if (e.shiftKey && e.key === 'Enter') {
+
+        }
+
+        else if (e.key === 'Enter') {
+            e.preventDefault();
             document.getElementById('messageSendButton').click();
         }
     }
 
+    handleEmojiClick = (code, data) => {
+        const jsemoji = new JSEMOJI();
+        // set the style to emojione (default - apple)
+        jsemoji.img_set = 'emojione';
+        // set the storage location for all emojis
+        jsemoji.img_sets.emojione.path = 'https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/';
+
+
+        let emojiRender = jsemoji.replace_colons(`:${data.name}:`);
+
+        this.setState(
+            {
+                text: this.state.text + emojiRender
+            }
+        )
+
+    };
+
+    handleClickOpenEmojiButton = () => {
+
+        let emojiPanelDisplay = document.getElementsByClassName('emoji-picker')[0];
+        emojiPanelDisplay.style.display = 'block';
+
+    };
+
+
+    componentWillMount() {
+        document.addEventListener('mousedown', this.handleClick, false)
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClick, false)
+    }
+
+    handleClick = (e) => {
+        if (this.node.contains(e.target)) {
+            return
+        }
+        this.handleClickOutside();
+    };
+
+    handleClickOutside = () => {
+        let emojiPanelDisplay = document.getElementsByClassName('emoji-picker')[0];
+        emojiPanelDisplay.style.display = "none";
+    };
+
     render() {
         return (
-            <div className="MessageInputForm">
+            <div className="MessageInputForm" >
+                <div id="openEmojiButton" onClick={this.handleClickOpenEmojiButton}>
+                   <FontAwesomeIcon id="grin-beam" icon="grin-beam" />
+                </div>
+
+                <div ref={node => this.node = node}>
+                    <EmojiPicker  onEmojiClick={this.handleEmojiClick} />
+                </div>
                 <form className="form-group">
                     <label >Message Input</label>
+
                     <textarea
                         value={this.state.text}
                         onChange={this.updateMessage}
@@ -101,5 +166,6 @@ const mapDispatchToProps = (dispatch) => {
         }
     }
 };
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(MessageInputForm);

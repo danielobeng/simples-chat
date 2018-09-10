@@ -9,17 +9,24 @@ import Jumbotron from "./components/Jumbotron";
 
 import { connect } from 'react-redux';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faGrinBeam } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faGrinBeam)
+
+
 // TODO:
 // make messages load without the need for a timer using promises properly
-// only one username per session
-// map enter to submit name for logiin
-// map enter to denter message on input and shift + enter to enter a new line
-// emoji selesctions
 // fix the need to have messages pre-loaded
+// only one username per session
 // implement event sourcing
+//skeleton page pre loaded
+// spinner for loading
+// design and add a special hug emoji to the chat app
+// loader for message send
 
-// BUG:
-// send on enter does not scoll page down
+// BUGS:
+// clicking on emoji button should also close the emoji pane
 
 class App extends Component {
     constructor() {
@@ -38,7 +45,6 @@ class App extends Component {
     componentDidMount() {
 
         getMessages().then(messages => this.setState({messages}));
-        setTimeout(() => this.props.pullMessages(this.state.messages), 2000)
 
         onNewMessage(newMessage => {
             const messages = [...this.props.messages, newMessage];
@@ -58,6 +64,10 @@ class App extends Component {
             else {
                 Message[i].classList.remove('self')
             }
+        }
+
+        if (this.state.messages) {
+            this.props.pullMessages(this.state.messages, true)
         }
     }
 
@@ -91,7 +101,7 @@ const mapStateToProps = (state) => {
     return {
         author: state.author,
         username: state.username,
-        messages: state.messages
+        messages: state.messages,
     }
 };
 
@@ -103,10 +113,13 @@ const mapDispatchToProps = (dispatch) => {
                 payload: {author}
             })
         },
-        pullMessages: (messages) => {
+        pullMessages: (messages, initialDataLoaded) => {
             dispatch({
                 type: "PULL_MESSAGES",
-                payload: {messages}
+                payload: {
+                    messages,
+                    initialDataLoaded,
+                }
             })
         },
 

@@ -35,7 +35,11 @@
     bottom: -89px;
     z-index: 2;
     overflow: overlay; }
-  @media screen and (max-width: 1064px) {
+  @media screen and (max-width: 1392px) {
+    .jumbotron h1 {
+      bottom: -73px;
+      font-size: 700%; } }
+  @media screen and (max-width: 725px) {
     .jumbotron h1 {
       top: 50px;
       font-size: 500%; } }

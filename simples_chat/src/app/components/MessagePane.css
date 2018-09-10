@@ -3,7 +3,8 @@
   border-radius: 10px;
   background-color: #e5f1f3;
   overflow-y: scroll;
-  height: 500px; }
+  height: 500px;
+  position: relative; }
 
 .Message {
   background-color: #007bff;

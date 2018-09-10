@@ -1,7 +1,5 @@
-import messages from '../../messages.json';
-
 const initialState = {
-    messages,
+    initialDataLoaded: false,
     author: '',
     username: '',
     text: '',
@@ -31,7 +29,8 @@ const reducer = (state = initialState, action) => {
         case 'PULL_MESSAGES':
             newState = {
                 ...state,
-                messages: action.payload.messages
+                messages: action.payload.messages,
+                initialDataLoaded: action.payload.initialDataLoaded
             };
             break;
         case 'CHANGE_USERNAME':
@@ -39,6 +38,8 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 username: state.author
             };
+            break;
+        default: {}
     }
     return newState
 };

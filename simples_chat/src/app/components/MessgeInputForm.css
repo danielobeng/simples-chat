@@ -1,6 +1,24 @@
 .MessageInputForm {
   padding: 10px 0 10px 0;
-  color: #8b8f97; }
+  color: #8b8f97;
+  position: relative; }
+  .MessageInputForm #openEmojiButton {
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 30px; }
+    .MessageInputForm #openEmojiButton:hover {
+      color: #fff00a;
+      cursor: pointer; }
+    .MessageInputForm #openEmojiButton #grin-beam {
+      width: 100%;
+      height: 100%; }
+  .MessageInputForm .emoji-picker {
+    position: absolute;
+    left: 0;
+    bottom: 185px;
+    display: none;
+    transition: opacity 4s ease-in; }
   .MessageInputForm form {
     text-align: center;
     margin: 0; }
