@@ -80,10 +80,14 @@ class MessageInputForm extends React.Component {
     };
 
     handleClickOpenEmojiButton = () => {
+        let emojiPanel = document.getElementsByClassName('emoji-picker')[0];
 
-        let emojiPanelDisplay = document.getElementsByClassName('emoji-picker')[0];
-        emojiPanelDisplay.style.display = 'block';
-
+        if (window.getComputedStyle(emojiPanel, null).getPropertyValue('display') === 'none') {
+            emojiPanel.style.display = 'block';
+            }
+        else if (window.getComputedStyle(emojiPanel, null).getPropertyValue('display') === 'block') {
+            // emojiPanel.style.display = 'none';
+        }
     };
 
 
@@ -115,7 +119,7 @@ class MessageInputForm extends React.Component {
                 </div>
 
                 <div ref={node => this.node = node}>
-                    <EmojiPicker  onEmojiClick={this.handleEmojiClick} />
+                    <EmojiPicker onEmojiClick={this.handleEmojiClick} />
                 </div>
                 <form className="form-group">
                     <label >Message Input</label>

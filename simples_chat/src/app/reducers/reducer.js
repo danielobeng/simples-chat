@@ -30,7 +30,8 @@ const reducer = (state = initialState, action) => {
             newState = {
                 ...state,
                 messages: action.payload.messages,
-                initialDataLoaded: action.payload.initialDataLoaded
+                // initialDataLoaded: action.payload.initialDataLoaded
+                initialDataLoaded: true,
             };
             break;
         case 'CHANGE_USERNAME':
@@ -46,16 +47,3 @@ const reducer = (state = initialState, action) => {
 
 export default reducer;
 
-// onSendMessage(author, text) {
-//     const newMessage = {
-//         id: this.state.messages[this.state.messages.length - 1].id + 1,
-//         author: this.props.author,
-//         text: text,
-//         channel_id: '',
-//     };
-//
-//     saveMessage(newMessage);
-//
-//     const messages = [...this.state.messages, newMessage];
-//     this.setState({ messages });
-// };

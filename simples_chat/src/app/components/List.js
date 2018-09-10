@@ -23,6 +23,7 @@ const Message = function(props) {
 };
 
 const MessageLoader = function(props) {
+    console.log(props.loadState)
     if (props.loadState === true) {
         return (
             <div>
@@ -59,7 +60,6 @@ class List extends React.Component {
         return (
             <div className="MessageContainer" id="MessageContainer">
                 <MessageLoader messages={this.props.messages} loadState={this.props.initialDataLoaded}/>
-                {/*{this.props.messages.map(({id, author, text}) => <Message key={id} author={author} text={text}/>)}*/}
                 <div id="messageScroll" ref={(el) => { this.messagesEnd = el; }}> </div>
             </div>
         );

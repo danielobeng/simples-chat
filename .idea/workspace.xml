@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f25d5c8-a83c-4b9b-b102-f45ed4b77ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/simples_chat/src/app/components/List.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simples_chat/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.css" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/List.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/MessageInputForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/MessageInputForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/MessagePane.css" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/MessagePane.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/MessagePane.scss" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/MessagePane.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simples_chat/src/app/reducers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/simples_chat/src/app/reducers/reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +64,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="58" />
-          <entry key="js" value="31471" />
+          <entry key="js" value="32767" />
           <entry key="json" value="97" />
           <entry key="scss" value="6611" />
         </counts>
@@ -82,7 +73,7 @@
         <counts>
           <entry key=".env file" value="58" />
           <entry key="JSON" value="97" />
-          <entry key="JavaScript" value="31471" />
+          <entry key="JavaScript" value="32767" />
           <entry key="SCSS" value="6611" />
         </counts>
       </usages-collector>
@@ -93,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/MessageInputForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            <state relative-caret-position="231">
+              <caret line="89" column="9" lean-forward="true" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -116,11 +107,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simples_chat/src/app/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="330">
+              <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -128,23 +119,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/List.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/List.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -203,13 +185,13 @@
         <option value="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.js" />
         <option value="$PROJECT_DIR$/simples_chat/src/app/components/LoginForm.js" />
         <option value="$PROJECT_DIR$/simples_chat/src/app/components/Jumbotron.scss" />
-        <option value="$PROJECT_DIR$/simples_chat/src/app/components/MessageInputForm.js" />
         <option value="$PROJECT_DIR$/simples_chat/src/app/components/MessgeInputForm.scss" />
         <option value="$PROJECT_DIR$/simples_chat/src/app/components/MessagePane.scss" />
-        <option value="$PROJECT_DIR$/simples_chat/src/app/components/List.js" />
         <option value="$PROJECT_DIR$/simples_chat/src/app/components/List.scss" />
-        <option value="$PROJECT_DIR$/simples_chat/src/app/reducers/reducer.js" />
+        <option value="$PROJECT_DIR$/simples_chat/src/app/components/MessageInputForm.js" />
         <option value="$PROJECT_DIR$/simples_chat/src/app/App.js" />
+        <option value="$PROJECT_DIR$/simples_chat/src/app/reducers/reducer.js" />
+        <option value="$PROJECT_DIR$/simples_chat/src/app/components/List.js" />
       </list>
     </option>
   </component>
@@ -371,9 +353,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="23" width="960" height="1177" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25490198" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25490198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -386,7 +367,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299539" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299539" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -556,16 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/MessagePane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/MessagePane.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -576,16 +547,6 @@
     <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/List.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/MessageInputForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simples_chat/src/app/storage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -593,23 +554,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/reducers/reducer.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/List.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/List.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,12 +571,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/MessagePane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/MessageInputForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="89" column="9" lean-forward="true" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simples_chat/src/app/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="330">
+          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/reducers/reducer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples_chat/src/app/components/List.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
